@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println(math_ceil())
+	Calc()
 }
 
 func math_1() int {
@@ -45,7 +45,6 @@ func Calc() {
 		first  float64
 		second float64
 	)
-	var result float64
 	fmt.Println("Kalkulator")
 	fmt.Println("Qaysi amalni bajarmoqchisiz? (+, -, *, /)")
 	fmt.Scan(&action)
@@ -55,6 +54,16 @@ func Calc() {
 	fmt.Scan(&second)
 	switch action {
 	case "+":
-		result = first + second
+		fmt.Println("Javob: ", first+second)
+	case "-":
+		fmt.Println("Javob: ", first-second)
+	case "/":
+		fmt.Println("Javob: ", first/second)
+	case "%":
+		fmt.Println("Javob: ", first*second)
+	case "*":
+		fmt.Println("Javob: ", first*second)
+	default:
+		fmt.Println("Iltimos Shartni to'gri kiriting")
 	}
 }

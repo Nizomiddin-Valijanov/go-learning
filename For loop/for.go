@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	matrix()
 }
 
 func loop_1() {
